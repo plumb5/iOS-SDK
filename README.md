@@ -127,19 +127,12 @@ let locationManager = CLLocationManager()
 
 ```smalltalk
 let appKey = “ provide your app key ”
-
 let serviceUrl = “(your service url)”
-
 locationManager.delegate = self
-
 locationManager.requestAlwaysAuthorization()
-
 registerForPushNotifications()
-
 P5SDKManager.initP5SDK(key: appKey, serviceUrl : serviceUrl ,completion:nil);
-
 P5SDKManager.sharedInstance.delegate = self;
-
 P5SDKManager.applicationLaunchedWithOption(launchOptions: launchOptions)
 ```
 
@@ -148,23 +141,16 @@ P5SDKManager.applicationLaunchedWithOption(launchOptions: launchOptions)
 func registerForPushNotifications() {
 
 if #available(iOS 10, *) {
-
 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
-
 (granted, error) in
-
 print("Permission granted: \(granted)")
-
 guard granted else { return }
-
 self.getNotificationSettings()
-
 }
 
 }else if #available(iOS 9, *) {
 
 UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil))
-
 UIApplication.shared.registerForRemoteNotifications()
 
 }
@@ -174,17 +160,13 @@ UIApplication.shared.registerForRemoteNotifications()
 func application(_ application: UIApplication,
 
 didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-
 let tokenParts = deviceToken.map { data -> String in
-
 return String(format: "%02.2hhx", data)
 
 }
 
 let token = tokenParts.joined()
-
 print("Device Token: \(token)")
-
 P5SDKManager.sharedInstance.p5DeviceToken = token;
 
 //FIRInstanceID.instanceID().setAPNSToken(deviceToken, type: FIRInstanceIDAPNSTokenType.sandbox)
@@ -194,7 +176,6 @@ P5SDKManager.sharedInstance.p5DeviceToken = token;
 func application(_ application: UIApplication,
 
 didFailToRegisterForRemoteNotificationsWithError error: Error) {
-
 print("Failed to register: \(error)")
 
 }
@@ -204,11 +185,8 @@ func application(
 _ application: UIApplication,
 
 didReceiveRemoteNotification userInfo: [AnyHashable : Any],
-
 fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-
 print(userInfo);
-
 P5SDKManager.handlePushNotification(userInfo: userInfo)
 
 }
@@ -230,9 +208,7 @@ P5SDKManager.handlePushNotification(userInfo: userInfo)
 @available(iOS 10.0, *)
 
 extension AppDelegate: CLLocationManagerDelegate, P5ActionsDelegate {
-
 func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-
 P5SDKManager.handleGeofenceEvent(region: region, onEntry: "1")
 
 }
@@ -347,11 +323,8 @@ import UserNotifications
 public enum MediaType: String {
 
 case image = "image"
-
 case gif = "gif"
-
 case video = "video"
-
 case audio = "audio"
 
 }
@@ -359,17 +332,11 @@ case audio = "audio"
 fileprivate struct Media {
 
 private var data: Data
-
 private var ext: String
-
 private var type: MediaType
-
 init(forMediaType mediaType: MediaType, withData data: Data, fileExtension ext: String) {
-
 self.type = mediaType
-
 self.data = data
-
 self.ext = ext
 
 }
@@ -449,19 +416,14 @@ fileprivate extension UNNotificationAttachment {
 static func create(fromMedia media: Media) -> UNNotificationAttachment? {
 
 let fileManager = FileManager.default
-
 let tmpSubFolderName = ProcessInfo.processInfo.globallyUniqueString
-
 let tmpSubFolderURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(tmpSubFolderName, isDirectory: true)
 
 do {
 
 try fileManager.createDirectory(at: tmpSubFolderURL, withIntermediateDirectories: true, attributes: nil)
-
 let fileIdentifier = "\(media.fileIdentifier).\(media.fileExt)"
-
 let fileURL = tmpSubFolderURL.appendingPathComponent(fileIdentifier)
-
 guard let data = media.mediaData else {
 
 return nil
@@ -513,9 +475,7 @@ fileprivate func loadAttachment(forMediaType mediaType: MediaType, withUrlString
 (UNNotificationAttachment?) -> Void)) {
 
 guard let url = resourceURL(forUrlString: urlString) else {
-
 completionHandler(nil)
-
 return
 
 }
@@ -525,11 +485,8 @@ do {
 let data = try Data(contentsOf: url)
 
 let media = Media(forMediaType: mediaType, withData: data, fileExtension: url.pathExtension)
-
 if let attachment = UNNotificationAttachment.create(fromMedia: media) {
-
 completionHandler(attachment)
-
 return
 
 }
@@ -545,21 +502,17 @@ completionHandler(nil)
 } } class NotificationService: UNNotificationServiceExtension {
 
 var contentHandler: ((UNNotificationContent) -> Void)?
-
 var bestAttemptContent: UNMutableNotificationContent?
-
 override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void)
 
 { self.contentHandler = contentHandler
 
 bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
-
 if let bestAttemptContent = bestAttemptContent {
 
 // Modify the notification content here...
 
 bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
-
 let userInfo = bestAttemptContent.userInfo
 
 // check for a media attachment
@@ -567,9 +520,7 @@ let userInfo = bestAttemptContent.userInfo
 guard
 
 let url = userInfo["attachment-url"] as? String,
-
 let _mediaType = userInfo["media-type"] as? String,
-
 let mediaType = MediaType(rawValue:_mediaType)
 
 else {
