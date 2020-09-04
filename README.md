@@ -1,8 +1,4 @@
 # iOS-SDK
-App Analytics SDK for iOS Applications
-
-
-
 
 # **Plumb5 SDK for iOS Devices**
 
