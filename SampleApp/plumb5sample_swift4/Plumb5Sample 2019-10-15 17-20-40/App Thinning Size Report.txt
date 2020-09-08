@@ -1,0 +1,64 @@
+
+App Thinning Size Report for All Variants of Plumb5Sample
+
+Variant: Plumb5Sample-1F149DEA-EB9A-49D8-9630-C5BD2A0CFCC2.ipa
+Supported variant descriptors: [device: iPad6,4, os-version: 11], [device: iPhone10,1, os-version: 11], [device: iPad7,4, os-version: 11], [device: iPad7,1, os-version: 11], [device: iPhone9,3, os-version: 11], [device: iPhone9,1, os-version: 11], [device: iPhone10,4, os-version: 11], [device: iPad6,3, os-version: 11], [device: iPad7,2, os-version: 11], and [device: iPad7,3, os-version: 11]
+App + On Demand Resources size: 9.6 MB compressed, 96.5 MB uncompressed
+App size: 9.6 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: Plumb5Sample-387FA45C-7ABA-4F7F-835F-EA76C1B38129.ipa
+Supported variant descriptors: [device: iPad7,6, os-version: 12], [device: iPad4,8, os-version: 12], [device: iPod7,1, os-version: 12], [device: iPad4,7, os-version: 12], [device: iPhone8,4, os-version: 12], [device: iPad6,8, os-version: 12], [device: iPad5,3, os-version: 12], [device: iPad4,5, os-version: 12], [device: iPhone6,1, os-version: 12], [device: iPad4,1, os-version: 12], [device: iPad6,12, os-version: 12], [device: iPad4,3, os-version: 12], [device: iPhone6,2, os-version: 12], [device: iPhone8,1, os-version: 12], [device: iPhone7,2, os-version: 12], [device: iPad4,6, os-version: 12], [device: iPad4,4, os-version: 12], [device: iPad6,7, os-version: 12], [device: iPad4,9, os-version: 12], [device: iPad7,5, os-version: 12], [device: iPad5,2, os-version: 12], [device: iPad5,4, os-version: 12], [device: iPad5,1, os-version: 12], [device: iPad6,11, os-version: 12], and [device: iPad4,2, os-version: 12]
+App + On Demand Resources size: 9.6 MB compressed, 96.5 MB uncompressed
+App size: 9.6 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: Plumb5Sample-7DB36983-A03D-406F-B908-8AC025E0797C.ipa
+Supported variant descriptors: [device: iPhone10,5, os-version: 12], [device: iPhone10,3, os-version: 12], [device: iPhone10,6, os-version: 12], [device: iPhone10,2, os-version: 12], [device: iPhone9,2, os-version: 12], [device: iPhone11,6, os-version: 12], [device: iPhone11,4, os-version: 12], [device: iPhone9,4, os-version: 12], and [device: iPhone11,2, os-version: 12]
+App + On Demand Resources size: 9.6 MB compressed, 96.5 MB uncompressed
+App size: 9.6 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: Plumb5Sample-99852684-4FC5-4E51-AAF4-DFDFCB823297.ipa
+Supported variant descriptors: [device: iPhone6,1, os-version: 11], [device: iPad7,5, os-version: 11], [device: iPad7,6, os-version: 11], [device: iPhone8,4, os-version: 11], [device: iPad6,12, os-version: 11], [device: iPad4,2, os-version: 11], [device: iPad4,8, os-version: 11], [device: iPhone7,2, os-version: 11], [device: iPad4,1, os-version: 11], [device: iPad6,8, os-version: 11], [device: iPad5,3, os-version: 11], [device: iPod7,1, os-version: 11], [device: iPhone6,2, os-version: 11], [device: iPad6,7, os-version: 11], [device: iPad4,4, os-version: 11], [device: iPad4,6, os-version: 11], [device: iPhone8,1, os-version: 11], [device: iPad4,7, os-version: 11], [device: iPad4,5, os-version: 11], [device: iPad5,4, os-version: 11], [device: iPad5,1, os-version: 11], [device: iPad4,9, os-version: 11], [device: iPad5,2, os-version: 11], [device: iPad4,3, os-version: 11], and [device: iPad6,11, os-version: 11]
+App + On Demand Resources size: 9.6 MB compressed, 96.5 MB uncompressed
+App size: 9.6 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: Plumb5Sample-A41BE253-90FE-4B90-AC17-7BA6B0049E1C.ipa
+Supported variant descriptors: [device: iPhone9,4, os-version: 11], [device: iPhone9,2, os-version: 11], [device: iPhone10,2, os-version: 11], [device: iPhone10,5, os-version: 11], [device: iPhone10,3, os-version: 11], and [device: iPhone10,6, os-version: 11]
+App + On Demand Resources size: 9.6 MB compressed, 96.5 MB uncompressed
+App size: 9.6 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: Plumb5Sample-A548CDEE-8EA4-439B-A2C6-172A54F9AC80.ipa
+Supported variant descriptors: [device: iPad7,4, os-version: 12], [device: iPhone10,1, os-version: 12], [device: iPad6,3, os-version: 12], [device: iPhone10,4, os-version: 12], [device: iPad8,3, os-version: 12], [device: iPad7,3, os-version: 12], [device: iPad8,2, os-version: 12], [device: iPad8,4, os-version: 12], [device: iPad8,6, os-version: 12], [device: iPad8,1, os-version: 12], [device: iPad7,1, os-version: 12], [device: iPad7,2, os-version: 12], [device: iPad8,8, os-version: 12], [device: iPad6,4, os-version: 12], [device: iPhone11,8, os-version: 12], [device: iPhone9,3, os-version: 12], [device: iPad8,7, os-version: 12], [device: iPad8,5, os-version: 12], and [device: iPhone9,1, os-version: 12]
+App + On Demand Resources size: 9.6 MB compressed, 96.5 MB uncompressed
+App size: 9.6 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: Plumb5Sample-C8171A99-1932-4CB0-954E-97A58E12E6BD.ipa
+Supported variant descriptors: [device: iPhone8,2, os-version: 12]
+App + On Demand Resources size: 9.6 MB compressed, 96.5 MB uncompressed
+App size: 9.6 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: Plumb5Sample-E149A4C9-CDB2-4233-970E-88031121AFF1.ipa
+Supported variant descriptors: [device: iPhone7,1, os-version: 11] and [device: iPhone8,2, os-version: 11]
+App + On Demand Resources size: 9.6 MB compressed, 96.5 MB uncompressed
+App size: 9.6 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: Plumb5Sample.ipa
+Supported variant descriptors: Universal
+App + On Demand Resources size: 30.5 MB compressed, 96.5 MB uncompressed
+App size: 30.5 MB compressed, 96.5 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed

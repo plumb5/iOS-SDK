@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+pod 'Alamofire', '~> 4.7.0'
+pod 'SugarRecord/CoreData'
+pod 'SugarRecord/CoreData+iCloud'
+
+target 'P5Sample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for P5Sample
+
+end
